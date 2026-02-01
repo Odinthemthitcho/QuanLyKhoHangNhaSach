@@ -58,6 +58,21 @@ public class SachDAO implements Daointerface<Sach> {
 
     @Override
     public int delete(Sach sach) {
+        try {
+            // B1: kết nối tới sql
+            Connection connection = DBConnection.getConnection();
+            Statement st = connection.createStatement();
+            //B2: Thực thi lệnh sql
+            String sql = "";
+            //B3: Hiển thị kết quả
+            int ketqua = st.executeUpdate(sql);
+            System.out.println("Ban da thuc thi"+sql);
+            System.out.println("Co " + ketqua + " dong bi thay doi");
+            return ketqua;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return 0;
     }
 
