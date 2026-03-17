@@ -5,6 +5,8 @@ public class Sach extends SanPham {
 
    private String theloai;
    private int namXuatban;
+   //Tác giả 
+   //Lĩnh vực
 
    public Sach(String masp, String tensp, int soluong, double dongia,
                String theloai, int namXuatban) {
