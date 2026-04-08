@@ -64,6 +64,7 @@ public class QuanLyKho {
         }
         System.out.println("-----------------------------------------");
     }
+    // Cập nhật thông tin sản phẩm
 }
 
 

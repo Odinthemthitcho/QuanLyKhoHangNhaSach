@@ -32,10 +32,6 @@ public double tongGiaTriKho() {
 
         return tong;
     }
-//    Sản phẩm sắp hết hàng
-//    Sách tồn kho nhiều nhất
-//    Sách tồn kho ít nhất
-//    Thống kê theo thể loại
-//    Danh sách sách theo năm xuất bản
-// vẽ biểu đồ hiển thị danh sách bán 
+//    Sản phẩm sắp hết hàng sp < 5 
+
 }
