@@ -12,7 +12,7 @@ public interface Daointerface<T> {
 
     ArrayList<T> selectAll();
 
-    T selectById(int id);
+    T selectById(String id);
 
     ArrayList<T> selectByCondition(String condition);
 }

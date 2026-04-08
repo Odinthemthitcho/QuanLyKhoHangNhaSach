@@ -3,17 +3,17 @@ package service;
 import dao.SachDAO;
 import model.Sach;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+// import java.util.ArrayList;
+// import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+// import java.util.Map;
 
 public class ThongKeKho {
-    private SachDAO sachDAO = new sachDAO();
+    private SachDAO sachDAO = new SachDAO();
 
 //    Tổng số lượng tồn kho
     public int tongsoluongtonkho() {
-        List<Sach> ds = sachDAO.getall();
+        List<Sach> ds = sachDAO.selectAll();
         int tong = 0;
 
         for (Sach s : ds){
@@ -22,16 +22,16 @@ public class ThongKeKho {
         return tong;
     }
 //    Tổng giá trị kho
-public double tongGiaTriKho() {
-        List<Sach> ds = sachDAO.getAll();
-        double tong = 0;
+// public double tongGiaTriKho() {
+//         List<Sach> ds = sachDAO.selectAll();
+//         double tong = 0;
 
-        for (Sach s : ds) {
-            tong += s.getSoLuong() * s.getGia();
-        }
+//         for (Sach s : ds) {
+//             tong += s.getSoLuong() * s.getGia();
+//         }
 
-        return tong;
-    }
-//    Sản phẩm sắp hết hàng sp < 5 
+//         return tong;
+//     }
+//    Sản phẩm sắp hết hàng sp < 5 Z
 
 }

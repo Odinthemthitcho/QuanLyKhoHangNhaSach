@@ -33,7 +33,7 @@ public class QuanLyKho {
 // Nhập hàng (+ tìm id để sộng số lượng nếu chưa có thì thêm sản phẩm)
     public void nhapHang(Sach sachNhap) {
         int maInt = Integer.parseInt(sachNhap.getMasp()); 
-        Sach sachHienTai = sachDAO.selectById(maInt);
+        Sach sachHienTai = sachDAO.selectById(String.valueOf(maInt));
         if (sachHienTai != null) {
             int soLuongMoi = sachHienTai.getSoluong() + sachNhap.getSoluong();
             sachHienTai.setSoluong(soLuongMoi);
