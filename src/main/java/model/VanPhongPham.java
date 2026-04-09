@@ -1,27 +1,27 @@
 package model;
 
 public class VanPhongPham extends SanPham {
-    private String thuongHieu;
+    private String thuonghieu;
     private String xuatXu;
-    private String chatLuong;
+    private String chatluong;
 
     public VanPhongPham() {
     }
 
     public VanPhongPham(String masp, String tensp, int soluong, double dongia,
-                        String thuongHieu, String xuatXu, String chatLuong) {
+                        String thuonghieu, String xuatXu, String chatluong) {
         super(masp, tensp, soluong, dongia);
-        this.thuongHieu = thuongHieu;
+        this.thuonghieu = thuonghieu;
         this.xuatXu = xuatXu;
-        this.chatLuong = chatLuong;
+        this.chatluong = chatluong;
     }
 
     public String getThuongHieu() {
-        return thuongHieu;
+        return thuonghieu;
     }
 
-    public void setThuongHieu(String thuongHieu) {
-        this.thuongHieu = thuongHieu;
+    public void setThuongHieu(String thuonghieu) {
+        this.thuonghieu = thuonghieu;
     }
 
     public String getXuatXu() {
@@ -33,11 +33,11 @@ public class VanPhongPham extends SanPham {
     }
 
     public String getChatLuong() {
-        return chatLuong;
+        return chatluong;
     }
 
     public void setChatLuong(String chatLuong) {
-        this.chatLuong = chatLuong;
+        this.chatluong = chatLuong;
     }
 
     @Override
@@ -47,9 +47,9 @@ public class VanPhongPham extends SanPham {
                 ", tensp='" + tensp + '\'' +
                 ", soluong=" + soluong +
                 ", dongia=" + dongia +
-                ", thuongHieu='" + thuongHieu + '\'' +
+                ", thuonghieu='" + thuonghieu + '\'' +
                 ", xuatXu='" + xuatXu + '\'' +
-                ", chatLuong='" + chatLuong + '\'' +
+                ", chatluong='" + chatluong + '\'' +
                 '}';
     }
 }
