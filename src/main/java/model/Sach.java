@@ -1,29 +1,28 @@
 package model;
 
 public class Sach extends SanPham {
-    private String tacGia;
+    private String tacgia;
     private String theloai;
-    private int namXuatban;
-    private String nhaXuatBan;
+    private int namxuatban;
+    private String nhaxuatban;
 
     public Sach() {
     }
 
-    public Sach(String masp, String tensp, int soluong, double dongia,
-                String tacGia, String theloai, int namXuatban, String nhaXuatBan) {
+    public Sach(String masp, String tensp, int soluong, double dongia,String tacgia, String theloai, int namxuatban, String nhaxuatban) {
         super(masp, tensp, soluong, dongia);
-        this.tacGia = tacGia;
+        this.tacgia = tacgia;
         this.theloai = theloai;
-        this.namXuatban = namXuatban;
-        this.nhaXuatBan = nhaXuatBan;
+        this.namxuatban = namxuatban;
+        this.nhaxuatban = nhaxuatban;
     }
 
     public String getTacGia() {
-        return tacGia;
+        return tacgia;
     }
 
-    public void setTacGia(String tacGia) {
-        this.tacGia = tacGia;
+    public void setTacGia(String tacgia) {
+        this.tacgia = tacgia;
     }
 
     public String getTheloai() {
@@ -35,19 +34,19 @@ public class Sach extends SanPham {
     }
 
     public int getNamXuatban() {
-        return namXuatban;
+        return namxuatban;
     }
 
-    public void setNamXuatban(int namXuatban) {
-        this.namXuatban = namXuatban;
+    public void setNamXuatban(int namxuatban) {
+        this.namxuatban = namxuatban;
     }
 
     public String getNhaXuatBan() {
-        return nhaXuatBan;
+        return nhaxuatban;
     }
 
-    public void setNhaXuatBan(String nhaXuatBan) {
-        this.nhaXuatBan = nhaXuatBan;
+    public void setNhaXuatBan(String nhaxuatban) {
+        this.nhaxuatban = nhaxuatban;
     }
 
     @Override
@@ -57,10 +56,10 @@ public class Sach extends SanPham {
                 ", tensp='" + tensp + '\'' +
                 ", soluong=" + soluong +
                 ", dongia=" + dongia +
-                ", tacGia='" + tacGia + '\'' +
+                ", tacgia='" + tacgia + '\'' +
                 ", theloai='" + theloai + '\'' +
-                ", namXuatban=" + namXuatban +
-                ", nhaXuatBan='" + nhaXuatBan + '\'' +
+                ", namxuatban=" + namxuatban +
+                ", nhaxuatban='" + nhaxuatban + '\'' +
                 '}';
     }
 }

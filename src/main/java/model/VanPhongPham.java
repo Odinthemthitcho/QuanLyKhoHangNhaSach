@@ -2,17 +2,17 @@ package model;
 
 public class VanPhongPham extends SanPham {
     private String thuonghieu;
-    private String xuatXu;
+    private String xuatxu;
     private String chatluong;
 
     public VanPhongPham() {
     }
 
     public VanPhongPham(String masp, String tensp, int soluong, double dongia,
-                        String thuonghieu, String xuatXu, String chatluong) {
+                        String thuonghieu, String xuatxu, String chatluong) {
         super(masp, tensp, soluong, dongia);
         this.thuonghieu = thuonghieu;
-        this.xuatXu = xuatXu;
+        this.xuatxu = xuatxu;
         this.chatluong = chatluong;
     }
 
@@ -25,19 +25,19 @@ public class VanPhongPham extends SanPham {
     }
 
     public String getXuatXu() {
-        return xuatXu;
+        return xuatxu;
     }
 
-    public void setXuatXu(String xuatXu) {
-        this.xuatXu = xuatXu;
+    public void setXuatXu(String xuatxu) {
+        this.xuatxu = xuatxu;
     }
 
     public String getChatLuong() {
         return chatluong;
     }
 
-    public void setChatLuong(String chatLuong) {
-        this.chatluong = chatLuong;
+    public void setChatLuong(String chatluong) {
+        this.chatluong = chatluong;
     }
 
     @Override
@@ -48,7 +48,7 @@ public class VanPhongPham extends SanPham {
                 ", soluong=" + soluong +
                 ", dongia=" + dongia +
                 ", thuonghieu='" + thuonghieu + '\'' +
-                ", xuatXu='" + xuatXu + '\'' +
+                ", xuatxu='" + xuatxu + '\'' +
                 ", chatluong='" + chatluong + '\'' +
                 '}';
     }

@@ -16,7 +16,7 @@ public class LoginFrame extends javax.swing.JFrame {
     /**
      * Creates new form LoginFrame
      */
-    private TaiKhoanDao userDAO = new TaiKhoanDao();
+    // private TaiKhoanDao userDAO = new TaiKhoanDao();
     public LoginFrame() {
         initComponents();
         this.setLocationRelativeTo(null);// Hiển thị Form ở giữa màn hình
