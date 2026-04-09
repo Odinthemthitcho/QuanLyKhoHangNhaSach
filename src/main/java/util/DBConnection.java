@@ -1,5 +1,6 @@
 package util;
-
+import dao.SachDAO;
+import model.Sach;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
