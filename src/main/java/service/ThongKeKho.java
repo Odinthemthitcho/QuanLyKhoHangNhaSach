@@ -9,11 +9,11 @@ import java.util.List;
 import java.util.Map;
 
 public class ThongKeKho {
-    private SachDAO sachDAO = new sachDAO();
+    private SachDAO sachDAO = new SachDAO();
 
 //    Tổng số lượng tồn kho
     public int tongsoluongtonkho() {
-        List<Sach> ds = sachDAO.getall();
+        List<Sach> ds = sachDAO.getAll();
         int tong = 0;
 
         for (Sach s : ds){
@@ -27,7 +27,7 @@ public double tongGiaTriKho() {
         double tong = 0;
 
         for (Sach s : ds) {
-            tong += s.getSoLuong() * s.getGia();
+            tong += s.getSoluong() * s.getDongia();
         }
 
         return tong;
