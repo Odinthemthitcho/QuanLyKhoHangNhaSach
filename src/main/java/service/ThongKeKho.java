@@ -13,7 +13,11 @@ public class ThongKeKho {
 
 //    Tổng số lượng tồn kho
     public int tongsoluongtonkho() {
+<<<<<<< HEAD
         List<Sach> ds = sachDAO.selectAll();
+=======
+        List<Sach> ds = sachDAO.getAll();
+>>>>>>> da8a18eaf47535ad422117f8616ace934a1f1bc7
         int tong = 0;
 
         for (Sach s : ds){
@@ -26,6 +30,7 @@ public class ThongKeKho {
 //         List<Sach> ds = sachDAO.selectAll();
 //         double tong = 0;
 
+<<<<<<< HEAD
 //         for (Sach s : ds) {
 //             tong += s.getSoLuong() * s.getGia();
 //         }
@@ -33,5 +38,10 @@ public class ThongKeKho {
 //         return tong;
 //     }
 //    Sản phẩm sắp hết hàng sp < 5 Z
+=======
+        for (Sach s : ds) {
+            tong += s.getSoluong() * s.getDongia();
+        }
+>>>>>>> da8a18eaf47535ad422117f8616ace934a1f1bc7
 
 }
