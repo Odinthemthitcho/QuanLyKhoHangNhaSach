@@ -4,8 +4,6 @@
  */
 package ui;
 
-import dao.TaiKhoanDao;
-import javax.swing.JOptionPane;
 /**
  *
  * @author admin
@@ -15,10 +13,8 @@ public class LoginFrame extends javax.swing.JFrame {
     /**
      * Creates new form LoginFrame
      */
-    // private TaiKhoanDao userDAO = new TaiKhoanDao();
     public LoginFrame() {
         initComponents();
-        this.setLocationRelativeTo(null);// Hiển thị Form ở giữa màn hình
     }
 
     /**
@@ -30,148 +26,126 @@ public class LoginFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lbTaiKhoan = new javax.swing.JLabel();
-        lbMatKhau = new javax.swing.JLabel();
-        btDangNhap = new javax.swing.JButton();
-        btThoat = new javax.swing.JButton();
-        pwMatKhau = new javax.swing.JPasswordField();
-        txtTaiKhoan = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtPass = new javax.swing.JPasswordField();
+        txtUserid = new javax.swing.JTextField();
+        Next = new javax.swing.JButton();
+        NenLogin1 = new javax.swing.JLabel();
+        NenLogin2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login");
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbTaiKhoan.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        lbTaiKhoan.setText("Tài Khoản :");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Anh/Screenshot 2026-05-25 074105.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, 30));
 
-        lbMatKhau.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        lbMatKhau.setText("Mật Khẩu :");
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
+        jLabel2.setText("Sign in");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, -1, -1));
 
-        btDangNhap.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        btDangNhap.setText("Đăng Nhập");
-        btDangNhap.addActionListener(new java.awt.event.ActionListener() {
+        txtPass.setText("jPasswordField1");
+        txtPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btDangNhapActionPerformed(evt);
+                txtPassActionPerformed(evt);
             }
         });
+        getContentPane().add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 200, 40));
 
-        btThoat.setText("Thoát");
-        btThoat.addActionListener(new java.awt.event.ActionListener() {
+        txtUserid.setText("USERID");
+        txtUserid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btThoatActionPerformed(evt);
+                txtUseridActionPerformed(evt);
             }
         });
+        getContentPane().add(txtUserid, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 200, 40));
 
-        pwMatKhau.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        pwMatKhau.addActionListener(new java.awt.event.ActionListener() {
+        Next.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Anh/Screenshot 2026-05-25 075236.png"))); // NOI18N
+        Next.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pwMatKhauActionPerformed(evt);
+                NextActionPerformed(evt);
             }
         });
+        getContentPane().add(Next, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, 50, 40));
 
-        txtTaiKhoan.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        txtTaiKhoan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTaiKhoanActionPerformed(evt);
-            }
-        });
+        NenLogin1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Anh/Screenshot 2026-05-25 072549.png"))); // NOI18N
+        getContentPane().add(NenLogin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 0, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lbMatKhau, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lbTaiKhoan, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pwMatKhau, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
-                    .addComponent(txtTaiKhoan))
-                .addGap(75, 75, 75))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addComponent(btDangNhap)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btThoat)
-                .addGap(14, 14, 14))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbTaiKhoan)
-                    .addComponent(txtTaiKhoan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbMatKhau)
-                    .addComponent(pwMatKhau, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
-                .addComponent(btDangNhap)
-                .addGap(40, 40, 40)
-                .addComponent(btThoat)
-                .addGap(17, 17, 17))
-        );
+        NenLogin2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Anh/Screenshot 2026-05-25 073848.png"))); // NOI18N
+        getContentPane().add(NenLogin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 268, 483));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    //đăng nhập
-    private void btDangNhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDangNhapActionPerformed
+    private void txtUseridActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUseridActionPerformed
         // TODO add your handling code here:
-        String taiKhoan = txtTaiKhoan.getText().trim();
-        
-        // 2. Lấy dữ liệu từ ô mật khẩu (dùng biến pwMatKhau kiểu JPasswordField)
-        String matKhau = new String(pwMatKhau.getPassword()); 
+        txtPass.requestFocus();
+    }//GEN-LAST:event_txtUseridActionPerformed
 
-        // 3. Kiểm tra rỗng
-        if (taiKhoan.isEmpty() || matKhau.isEmpty()) {
-            javax.swing.JOptionPane.showMessageDialog(this, "Vui lòng nhập đầy đủ Tài Khoản và Mật Khẩu!", "Thông báo", javax.swing.JOptionPane.WARNING_MESSAGE);
-            return;
+    private void txtPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassActionPerformed
+        // TODO add your handling code here:
+        Next.doClick();
+    }//GEN-LAST:event_txtPassActionPerformed
+
+    private void NextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextActionPerformed
+        // TODO add your handling code here:
+        String userid = txtUserid.getText().trim();
+        String password = new String(txtPass.getPassword()).trim();
+
+        // 1. Kiểm tra xem người dùng đã nhập chưa
+        if (userid.isEmpty() || userid.equals("USERID") || 
+            password.isEmpty() || password.equals("PASSWORD")) {
+            javax.swing.JOptionPane.showMessageDialog(this, "Vui lòng nhập đầy đủ USERID và PASSWORD!");
+            return; 
         }
 
+        // 2. Kết nối CSDL để kiểm tra đăng nhập
         try {
-            // 4. Gọi DAO để kiểm tra đăng nhập dưới Database
-            dao.TaiKhoanDao userDAO = new dao.TaiKhoanDao();
-            boolean isSuccess = userDAO.checkLogin(taiKhoan, matKhau);
+            // Gọi hàm kết nối từ class DBConnection của bạn
+            java.sql.Connection conn = util.DBConnection.getConnection();
+            
+            if (conn == null) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Lỗi kết nối đến SQL Server! Vui lòng kiểm tra lại DBConnection.");
+                return;
+            }
 
-            // 5. Xử lý kết quả Đ/S theo đúng sơ đồ thuật toán
-            if (isSuccess) {
-                // Đúng: Hiện thông báo -> Mở giao diện chính -> Đóng form đăng nhập
+            // Câu lệnh SQL: Bạn nhớ thay đổi tên bảng (TaiKhoan) và tên cột (UserID, Password) 
+            // cho đúng với thiết kế bảng trong database "Quan_Ly_Kho_Hang" của bạn nhé.
+            String sql = "SELECT * FROM TaiKhoan WHERE UserID = ? AND Password = ?";
+            
+            java.sql.PreparedStatement pst = conn.prepareStatement(sql);
+            pst.setString(1, userid);
+            pst.setString(2, password);
+            
+            java.sql.ResultSet rs = pst.executeQuery();
+
+            if (rs.next()) {
+                // Nếu tìm thấy dòng dữ liệu -> Đăng nhập đúng
                 javax.swing.JOptionPane.showMessageDialog(this, "Đăng nhập thành công!");
                 
-                MenuFrame menuFrame = new MenuFrame();
-                menuFrame.setVisible(true);
-                
+                // Tắt form đăng nhập
                 this.dispose(); 
+                
+                // Mở cửa sổ chính (Bỏ comment khi bạn đã tạo Form Main)
+                // Main mainForm = new Main();
+                // mainForm.setVisible(true);
             } else {
-                // Sai: Hiện thông báo lỗi
-                javax.swing.JOptionPane.showMessageDialog(this, "Sai thông tin đăng nhập! Vui lòng kiểm tra lại.", "Lỗi đăng nhập", javax.swing.JOptionPane.ERROR_MESSAGE);
+                // Không tìm thấy -> Sai tài khoản/mật khẩu
+                javax.swing.JOptionPane.showMessageDialog(this, "USERID hoặc PASSWORD không đúng!", "Lỗi", javax.swing.JOptionPane.ERROR_MESSAGE);
             }
+            
+            // Đóng kết nối
+            rs.close();
+            pst.close();
+            conn.close();
+            
         } catch (Exception e) {
-            javax.swing.JOptionPane.showMessageDialog(this, "Lỗi hệ thống: " + e.getMessage(), "Lỗi", javax.swing.JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace();
+            javax.swing.JOptionPane.showMessageDialog(this, "Lỗi truy vấn: " + e.getMessage());
         }
-    }//GEN-LAST:event_btDangNhapActionPerformed
-
-    //thoát
-    private void btThoatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btThoatActionPerformed
-        // TODO add your handling code here:
-        int confirm = javax.swing.JOptionPane.showConfirmDialog(this, "Bạn có chắc chắn muốn thoát?", "Xác nhận", javax.swing.JOptionPane.YES_NO_OPTION);
-        if (confirm == javax.swing.JOptionPane.YES_OPTION) {
-            System.exit(0);
-        }
-        
-    }//GEN-LAST:event_btThoatActionPerformed
-
-    private void pwMatKhauActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwMatKhauActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pwMatKhauActionPerformed
-
-    private void txtTaiKhoanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTaiKhoanActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTaiKhoanActionPerformed
+    }//GEN-LAST:event_NextActionPerformed
 
     /**
      * @param args the command line arguments
@@ -209,11 +183,12 @@ public class LoginFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btDangNhap;
-    private javax.swing.JButton btThoat;
-    private javax.swing.JLabel lbMatKhau;
-    private javax.swing.JLabel lbTaiKhoan;
-    private javax.swing.JPasswordField pwMatKhau;
-    private javax.swing.JTextField txtTaiKhoan;
+    private javax.swing.JLabel NenLogin1;
+    private javax.swing.JLabel NenLogin2;
+    private javax.swing.JButton Next;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPasswordField txtPass;
+    private javax.swing.JTextField txtUserid;
     // End of variables declaration//GEN-END:variables
 }
