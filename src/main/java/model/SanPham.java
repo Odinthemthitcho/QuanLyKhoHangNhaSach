@@ -50,7 +50,8 @@ public abstract class SanPham {
     public String getLoai() {
         return "SanPham";
     }
-
+    
+    
 }
 
 

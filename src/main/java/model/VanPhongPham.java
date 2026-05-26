@@ -39,6 +39,7 @@ public class VanPhongPham extends SanPham {
     public void setChatLuong(String chatluong) {
         this.chatluong = chatluong;
     }
+    
 
     @Override
     public String toString() {

@@ -62,4 +62,9 @@ public class Sach extends SanPham {
                 ", nhaxuatban='" + nhaxuatban + '\'' +
                 '}';
     }
+    
+    @Override
+    public String getLoai() {
+        return "Sách";
+    }
 }
